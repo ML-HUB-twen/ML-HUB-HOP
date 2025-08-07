@@ -185,7 +185,7 @@ local function startServerHop()
 
 	coroutine.wrap(function()
 		while hopping do
-			for i = 3, 1, -1 do -- tempo de espera ajustado para 3 segundos
+			for i = 3, 1, -1 do
 				if not hopping then return end
 				button.Text = "Verificando em " .. i .. "s..."
 				wait(1)
